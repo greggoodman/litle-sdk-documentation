@@ -1,0 +1,31 @@
+When testing against Litle Sandbox, the response you receive is dictated by the credit card number provided.
+
+The response code is always going to be the last 3 digits of the credit card number supplied.
+
+Below are some sample card numbers you may use.
+
+Desired Response						Credit Card Number
+---------------------				---------------------------
+'000':'Approved'						4470330769941000
+'010':'Partially Approved'				4658512425423010
+'100':'Processing Network Unavailable'	4886883711815100
+'101':'Issuer Unavailable'				4215176886320101
+'102':'Re-submit Transaction'			4793258603663102
+'110':'Insufficient Funds'				4488282659650110
+
+
+
+You can also test Extra Litle features, such as Account Update, Vault, etc. These can be tested by changing
+the 3rd, 4th and 5th digit of the credit card number.
+
+Below are some sample card numbers along with the feature set they trigger on the sandbox:
+
+Feature									Credit Card Number
+----------------------				---------------------------
+Account Update							4100117890123000
+Vault/Token feature - returns a token	4100280190123000
+Valut/Token feature - returns card 		4100280290123000
+already registered
+Enhanced Auth Feature					4100322111199000
+AVS										4100400136403000
+CVV										4100500000000000
